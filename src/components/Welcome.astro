@@ -3,55 +3,43 @@ import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 
 const skills = [
-  { name: 'HTML', percent: 90 },
-  { name: 'CSS', percent: 85 },
-  { name: 'Bootstrap', percent: 80 },
-  { name: 'JavaScript', percent: 75 },
-  { name: 'Java', percent: 70 },
-  { name: 'Python', percent: 70 },
-  { name: 'SQL Server', percent: 80 },
-  { name: 'MongoDB', percent: 65 },
-  { name: 'MySQL', percent: 75 },
-  { name: 'IIS', percent: 60 },
-  { name: 'Azure', percent: 60 },
-  { name: 'Postman', percent: 70 },
+  { name: 'HTML', percent: 70 },
+  { name: 'CSS', percent: 70 },
+  { name: 'Bootstrap', percent: 60 },
+  { name: 'JavaScript', percent: 40 },
+  { name: 'Java', percent: 60 },
+  { name: 'Python', percent: 60 },
+  { name: 'SQL Server', percent: 50 },
+  { name: 'MongoDB', percent: 40 },
+  { name: 'MySQL', percent: 60 },
+  { name: 'IIS', percent: 50 },
+  { name: 'Azure', percent: 30 },
+  { name: 'Postman', percent: 50 },
 ];
 
 const es = {
+  welcome: 'Bienvenido a mi portafolio',
   greeting: '¡Hola! Soy Didier Alexander Villamil Jimenez',
-  role: 'Técnico profesional en soporte de sistemas e informática',
-  summary: 'Apasionado por la tecnología, con experiencia en logística inversa, soporte técnico (3.5 años), operador de datacenter, despliegues en Azure y más. Siempre en busca de nuevos retos y aprendizajes.',
-  certifications: 'Certificaciones en desarrollo de software',
-  experience: 'Experiencia',
-  skills: 'Habilidades',
-  projects: 'Mis proyectos',
-  language: 'Idioma',
-  about: 'Sobre mí',
-  expList: [
-    'Logística inversa (operativa)',
-    'Soporte técnico (3.5 años)',
-    'Operador de datacenter',
-    'Aprobación de despliegues en Azure',
-    'Conocimientos en SQL Server, MongoDB, MySQL, IIS, pool de aplicaciones, Postman',
-  ],
+  role: 'Desarrollador Full Stack (React, NodeJS, .Net) | Experto en soporte técnico | ITIL V4 | Gestión de servicios TI',
+  summary: 'Apasionado por la tecnología, actualmente me desempeño como operador de centro de datos. Me motiva crear soluciones innovadoras y eficientes.',
+  certifications: 'Desarrollo de aplicaciones Full Stack Avanzado - Cymetría | Diplomado en Desarrollo de Software - UNAL',
+  experience: '3.5 años en soporte técnico | 4 meses como operador de centro de datos | 1.5 años en desarrollo de software freelance',
+  skills: 'Trabajo en equipo, Creatividad, Pensamiento crítico, Análisis, Pensamiento lógico',
+  projects: 'Actualmente construyo una plataforma de aprendizaje como proyecto integrador de mi tecnólogo.',
+  language: 'Inglés B1',
+  about: 'Me apasionan los viajes, pasar tiempo con mi familia y aprender nuevas tecnologías para mejorar mis habilidades técnicas, creando soluciones de software.',
 };
 const en = {
+  welcome: 'Welcome to my portfolio',
   greeting: "Hi! I'm Didier Alexander Villamil Jimenez",
-  role: 'Professional technician in systems support and IT',
-  summary: 'Passionate about technology, with experience in reverse logistics, technical support (3.5 years), datacenter operator, Azure deployments, and more. Always seeking new challenges and learning opportunities.',
-  certifications: 'Software development certifications',
-  experience: 'Experience',
-  skills: 'Skills',
-  projects: 'My projects',
-  language: 'Language',
-  about: 'About me',
-  expList: [
-    'Reverse logistics (operations)',
-    'Technical support (3.5 years)',
-    'Datacenter operator',
-    'Azure deployment approvals',
-    'Knowledge in SQL Server, MongoDB, MySQL, IIS, application pools, Postman',
-  ],
+  role: 'Full Stack Developer (React, NodeJS, .Net) | Technical Support Expert | ITIL V4 | IT Service Management',
+  summary: 'Passionate about technology, currently working as a data center operator. I am motivated to create innovative and efficient solutions.',
+  certifications: 'Advanced Full Stack Application Development - Cymetría | Software Development Diploma - UNAL',
+  experience: '3.5 years in technical support | 4 months as a data center operator | 1.5 years as a freelance software developer',
+  skills: 'Teamwork, Creativity, Critical Thinking, Analysis, Logical Thinking',
+  projects: 'I am currently building a learning platform as my technologist integrative project.',
+  language: 'English B1',
+  about: 'I am passionate about traveling, spending time with my family, and learning new technologies to improve my technical skills by building software solutions.',
 };
 
 let lang = 'es';
@@ -74,35 +62,39 @@ function switchLang() {
   </header>
   <main>
     <section id="profile" class="box special-profile">
-      <h1>{t.greeting}</h1>
+      <h3 class="welcome-glow">{t.welcome}</h3>
+      <h1 class="futuristic-title">{t.greeting}</h1>
       <h2>{t.role}</h2>
-      <p>{t.summary}</p>
-      <p><b>{t.certifications}</b></p>
+      <p class="summary-glow">{t.summary}</p>
       <div class="avatar-glow">
-        <svg width="100" height="100" viewBox="0 0 100 100">
+        <svg width="110" height="110" viewBox="0 0 110 110">
           <defs>
             <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#bc52ee" stop-opacity="0.8"/>
+              <stop offset="0%" stop-color="#bc52ee" stop-opacity="0.9"/>
               <stop offset="100%" stop-color="#3245ff" stop-opacity="0.2"/>
             </radialGradient>
           </defs>
-          <circle cx="50" cy="50" r="40" fill="url(#glow)" />
-          <text x="50%" y="54%" text-anchor="middle" fill="#fff" font-size="22" font-family="Orbitron, Inter, sans-serif" dy=".3em">DA</text>
+          <circle cx="55" cy="55" r="48" fill="url(#glow)" />
+          <text x="50%" y="54%" text-anchor="middle" fill="#fff" font-size="28" font-family="Orbitron, Inter, sans-serif" dy=".3em">DA</text>
         </svg>
       </div>
+      <div class="profile-details">
+        <p><b>{lang === 'es' ? 'Certificaciones:' : 'Certifications:'}</b> {t.certifications}</p>
+        <p><b>{lang === 'es' ? 'Experiencia:' : 'Experience:'}</b> {t.experience}</p>
+        <p><b>{lang === 'es' ? 'Soft Skills:' : 'Soft Skills:'}</b> {t.skills}</p>
+        <p><b>{lang === 'es' ? 'Idioma:' : 'Language:'}</b> {t.language}</p>
+        <p><b>{lang === 'es' ? 'Sobre mí:' : 'About me:'}</b> {t.about}</p>
+      </div>
     </section>
-    <section id="exp" class="box">
-      <h2>{t.experience}</h2>
-      <ul>
-        {t.expList.map(item => <li>{item}</li>)}
-      </ul>
+    <section id="projects" class="box futuristic-box">
+      <h2><span class="icon-projects">🚀</span> {t.projects}</h2>
     </section>
-    <section id="skills" class="box">
-      <h2>{t.skills}</h2>
+    <section id="skills" class="box futuristic-box">
+      <h2><span class="icon-skills">🕹️</span> {lang === 'es' ? 'Habilidades Técnicas' : 'Technical Skills'}</h2>
       <div class="skills-list">
         {skills.map(skill => (
           <div class="skill-bar">
-            <span>{skill.name}</span>
+            <span class="skill-label">{skill.name}</span>
             <div class="bar-bg">
               <div class="bar-fill" style={`width: ${skill.percent}%`}></div>
             </div>
@@ -111,7 +103,6 @@ function switchLang() {
         ))}
       </div>
     </section>
-    <a class="button main-btn" href="#">{t.projects}</a>
   </main>
 </div>
 
@@ -256,6 +247,55 @@ main {
 @keyframes pulse-glow {
   0% { filter: drop-shadow(0 0 16px #bc52ee88); }
   100% { filter: drop-shadow(0 0 32px #3245ffcc); }
+}
+.welcome-glow {
+  font-size: 1.3rem;
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px #bc52ee, 0 0 16px #3245ff;
+  margin-bottom: 0.5em;
+  font-family: 'Orbitron', 'Inter', sans-serif;
+}
+.futuristic-title {
+  font-size: 2.5rem;
+  color: #bc52ee;
+  letter-spacing: 2px;
+  text-shadow: 0 0 16px #bc52ee, 0 0 32px #3245ff;
+  font-family: 'Orbitron', 'Inter', sans-serif;
+  margin-bottom: 0.2em;
+}
+.summary-glow {
+  color: #fff;
+  font-size: 1.1rem;
+  text-shadow: 0 0 8px #3245ff99;
+}
+.profile-details {
+  margin-top: 1.5em;
+  background: rgba(50, 69, 255, 0.08);
+  border-radius: 12px;
+  padding: 1em 1.5em;
+  box-shadow: 0 0 16px #bc52ee33;
+  color: #e0e0e0;
+  font-size: 1.05rem;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.futuristic-box {
+  border: 2px solid #3245ff;
+  box-shadow: 0 0 32px #3245ff55, 0 0 64px #bc52ee33;
+  background: linear-gradient(120deg, rgba(50,69,255,0.12) 0%, rgba(188,82,238,0.10) 100%);
+}
+.icon-projects, .icon-skills {
+  font-size: 1.3em;
+  margin-right: 0.5em;
+}
+.skill-label {
+  font-family: 'Orbitron', 'Inter', sans-serif;
+  color: #fff;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
 }
 @media (max-width: 600px) {
   main {
